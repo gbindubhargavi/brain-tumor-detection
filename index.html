@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroScan - Brain Tumor Detection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-brain"></i>
+                <h1>NeuroScan</h1>
+            </div>
+            <p class="tagline">Advanced Brain Tumor Detection System</p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-box" id="dropArea">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <h2>Upload MRI Scan</h2>
+                    <p>Drag & drop your brain MRI image here or click to browse</p>
+                    <input type="file" id="fileInput" accept="image/*">
+                </div>
+                <button id="analyzeBtn" disabled>Analyze Scan</button>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="image-preview">
+                    <img id="previewImage" src="" alt="MRI Scan Preview">
+                </div>
+                <div class="result-details">
+                    <h2>Analysis Result</h2>
+                    <div class="result-card">
+                        <div class="result-icon" id="resultIcon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h3 id="resultText">Waiting for analysis...</h3>
+                        <div class="confidence-meter">
+                            <div class="meter-bar" id="meterBar"></div>
+                            <span id="confidenceValue">0%</span>
+                        </div>
+                        <p class="result-description" id="resultDescription">
+                            The system will analyze your MRI scan for potential brain tumors.
+                        </p>
+                    </div>
+                    <button id="newScanBtn">Analyze New Scan</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>NeuroScan - Medical Diagnostic Tool</p>
+            <p class="disclaimer">
+                Disclaimer: This tool is for research purposes only.
+            </p>
+        </footer>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
