@@ -13,29 +13,6 @@ Brain tumors are potentially life-threatening and require early detection for ef
 - Web-based interface with a clean, medical-themed design.
 - Fast and reliable predictions.
 
-## 📂 Project Structure
-
-brain-tumor-detection/
-│
-├── static/
-│ ├── css/
-│ ├── js/
-│ └── uploaded_images/
-│
-├── templates/
-│ └── index.html
-│
-├── model/
-│ └── brain_tumor_model.keras
-│
-├── dataset/
-│ ├── brain_tumor/
-│ └── no_tumor/
-│
-├── app.py
-├── README.md
-└── requirements.txt
-
 
 ## 🛠️ Tech Stack
 
