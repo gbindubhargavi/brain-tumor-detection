@@ -1,17 +1,18 @@
-# Brain Tumor Detection System
+🧠 Brain Tumor Detection Using MRI Scans
+This project focuses on detecting brain tumors from MRI images using deep learning. The goal is to provide a reliable and efficient system that can assist healthcare professionals in identifying the presence of brain tumors using a trained convolutional neural network (CNN) model.
 
-A web application for detecting brain tumors in MRI scans using deep learning.
+📝 Project Description
+Brain tumors are abnormal growths of cells in the brain, which can be life-threatening. Early and accurate detection is essential for effective treatment. This project uses a deep learning model trained on MRI images to classify whether an image shows a brain tumor or not.
 
-## Features
+The project is implemented as a full-stack web application, where users can upload an MRI scan image and receive a prediction. The backend is powered by Python (Flask + TensorFlow), and the frontend is built using HTML, CSS, and JavaScript.
 
-- Drag and drop interface for MRI scan upload
-- Real-time tumor detection with confidence percentage
-- Clean, medical-themed UI
-- Mobile-responsive design
+💡 Features
+Upload MRI images to check for the presence of brain tumors.
 
-## Installation
+Deep learning model built using TensorFlow and Keras.
 
-1. Clone this repository
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+User-friendly web interface.
+
+Fast and accurate predictions.
+
+Medical-themed, clean UI design.
